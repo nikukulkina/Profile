@@ -1,0 +1,42 @@
+.stages
+	margin-left 3px
+	display flex
+	align-items center
+	font-size 13px
+	font-weight bold
+	line-height 20px
+
+	&__junior-js,
+	&__no-js,
+	&__middle-js,
+		position relative
+		&::before
+			position absolute
+			margin-top -30px
+			width 2px
+			height 12px
+			content ''
+			background-color #2f1b15
+
+	&__no-js
+		width 148px
+		&::before
+			height 25px
+	&__junior-js
+		width 225px
+	&__middle-js
+		margin-top 8px
+		margin-right 83px
+		width 173px
+		&::before
+			margin-top -25px
+
+	&__senior-js
+		&::after
+			position absolute
+			margin-top -30px
+			width 2px
+			height 25px
+			content ''
+			background-color #2f1b15
+	

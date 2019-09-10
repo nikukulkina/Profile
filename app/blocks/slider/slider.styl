@@ -1,0 +1,26 @@
+.slider
+	// position relative
+	margin-top 25px
+	margin-bottom 4px
+	margin-left -3px
+	&__123
+		width 100%
+		-webkit-appearance none
+		background-color transparent
+		// @stylint off 
+		&::-webkit-slider-thumb
+			-webkit-appearance none
+			width 17px
+			height 14px
+			cursor pointer
+			background-image url('/assets/images/triangle.png')
+
+		// @stylint off
+		&::-webkit-slider-runnable-track 
+			-webkit-appearance none
+			height 30px
+			background-image url('/assets/images/line1.png')
+			background-repeat no-repeat
+			background-position-y -10px
+			border none 
+			cursor: pointer;

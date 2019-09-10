@@ -1,0 +1,8 @@
+include /blocks/section-title/section-title
+include /blocks/section-description/section-description
+
+mixin text()
+	+b.text&attributes(attributes)
+		+section-title('Расскажите о себе словами')
+		+section-description('Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.')
+		+e('textarea').about(raws = '2')

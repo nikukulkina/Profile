@@ -1,0 +1,5 @@
+mixin info-field(items)
+	+b('label').info-field&attributes(attributes)
+		each item in items
+			+e('span').name!= item.label
+			+e('input').input(disabled type="text" name="name" value=item.value)

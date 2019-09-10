@@ -1,0 +1,7 @@
+include /blocks/checkbox/checkbox
+
+mixin checkboxes(array)
+	+b.checkboxes&attributes(attributes)
+		each item in array
+			+checkbox(item.checked)
+				!=item.title

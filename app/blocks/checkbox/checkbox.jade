@@ -1,0 +1,7 @@
+mixin checkbox(checked)
+	+b('label').checkbox&attributes(attributes)
+		+e('input').input(type='checkbox' checked = checked)
+		+e('span').square
+			+e('img').image(src='/assets/images/check.png')
+		+e('span').title
+			block

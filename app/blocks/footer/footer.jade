@@ -1,0 +1,6 @@
+include /blocks/date-field/date-field
+
+mixin footer()
+	+b('footer').footer&attributes(attributes)
+		+b('form').date
+			+date-field()

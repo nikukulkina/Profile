@@ -1,0 +1,8 @@
+mixin radiobutton(checked)
+	+b('label').radiobutton&attributes(attributes)
+		+e('input').input(checked = checked type='radio' name='plans')
+		+e('span').circle
+			+e('img').image(alt='checked' src='/assets/images/circle_check.png')
+		+e('span').title
+			block
+

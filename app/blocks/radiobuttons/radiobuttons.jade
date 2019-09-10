@@ -1,0 +1,7 @@
+include /blocks/radiobutton/radiobutton
+
+mixin radiobuttons(array)
+	+b.radiobuttons&attributes(attributes)
+		each item in array
+			+radiobutton(item.checked)
+				!=item.title

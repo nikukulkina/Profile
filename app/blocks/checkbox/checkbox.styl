@@ -1,0 +1,41 @@
+.checkbox
+	position relative
+	margin-bottom 14px
+	display flex
+	width 258px
+	
+	&__input
+		position absolute
+		left -9999px
+		visibility hidden
+		opacity 0
+
+	&__square
+		margin-top 2px
+		display block
+		width 19px
+		height 19px
+		background-image url(/assets/images/square.png)
+		background-size contain
+	
+	&__image
+		margin-top -10px
+		margin-left 2px
+		display none
+		width 22px
+		height auto
+
+	&__input:checked + &__square &__image
+		display block
+	
+	&__title
+		margin-left 8px
+		display block
+		font-family 'PTSans'
+		font-size 21px
+		font-weight bold	
+
+.checkbox:nth-child(n+15):nth-child(-n+20)
+	margin-bottom 14px
+	margin-left 11px
+	width 243px

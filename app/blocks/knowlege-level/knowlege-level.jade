@@ -1,0 +1,11 @@
+include /blocks/section-title/section-title
+include /blocks/section-description/section-description
+include /blocks/slider/slider
+include /blocks/stages/stages
+
+
+mixin knowlege-level()
+	+b.knowlege-level&attributes(attributes)
+		+section-title('Уровень владения JavaScript')
+		+slider()
+		+stages()

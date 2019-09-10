@@ -1,0 +1,32 @@
+include /blocks/info-field/info-field
+include /blocks/section-title/section-title
+include /blocks/section-description/section-description
+include /blocks/checkboxes/checkboxes
+include /blocks/knowlege-level/knowlege-level
+include /blocks/text/text
+include /blocks/radiobuttons/radiobuttons
+
+mixin main()
+	+b('main').main&attributes(attributes)
+		+e(img).title(src='/assets/images/case.png' alt='Дело')
+		+e('form').info(action='/')
+			+info-field([
+						{label: 'Полное ФИО', value: 'Иванов Иван Иванович'}])
+			+info-field([
+						{label: 'Год рождения', value: '1990'}])
+			+info-field([
+						{label: 'Место жительства', value: 'г. Иваново, Россия'}])
+			+info-field([
+						{label: 'Скайп', value: 'ivanov'}])
+			+info-field([
+						{label: 'Почта', value: 'ivanov@gmail.com'}])
+		+e('section').skills
+			+section-title('Расскажите о себе чекбоксами')
+			+section-description('Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.')
+			+checkboxes(getData('checkboxes'))
+			+knowlege-level()
+			+text()
+		+e('section').plans
+			+section-title('Какие у вас планы на будущее?')
+			+section-description('Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.')
+			+radiobuttons(getData('radiobuttons'))

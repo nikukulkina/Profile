@@ -1,0 +1,11 @@
+include /blocks/container/container
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/footer/footer
+
+mixin page-main()
+	+b('page-main').page-main&attributes(attributes)
+		+container()
+			+header()
+			+main()
+			+footer()

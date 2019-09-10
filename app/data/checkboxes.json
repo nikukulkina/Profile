@@ -1,0 +1,21 @@
+[
+	{"checked": true, "title": "БЭМ/OOCSS"}, 
+	{"checked": true, "title": "Pug (Jade)"},
+	{"checked": true, "title": "Stylus/LESS/SASS"}, 
+	{"checked": true, "title": "Работаю с SVG"}, 
+	{"checked": true, "title": "Верстаю семантично"},
+	{"checked": false, "title": "Accessibility (A11Y)"}, 
+	{"checked": false, "title": "ES2015/ES2016"},
+	{"checked": true, "title": "Gulp/GRUNT"},
+	{"checked": false, "title": "Webpack"}, 
+	{"checked": false, "title": "Дружу с WebGL "}, 
+	{"checked": true, "title": "JQuery"},
+	{"checked": false, "title": "Знаю/изучаю Angular"},
+	{"checked": false, "title": "Знаю/изучаю React"},
+	{"checked": false, "title": "Знаю/изучаю Node JS"}, 
+	{"checked": true, "title": "Использую GIT"},
+	{"checked": true, "title": "С глазомером всё ок"}, 
+	{"checked": true, "title": "Читаю <a href='http://blog.csssr.ru/'>blog.csssr.ru</a>"}, 
+	{"checked": false, "title": "Я ленивый (-ая)"}, 
+	{"checked": true, "title": "У меня хороший английский"}
+]
